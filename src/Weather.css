@@ -19,13 +19,61 @@
     background-color:  rgba(49, 171, 201, 0.397);
     border: 1px solid rgb(49, 170, 201);
     border-radius: 5px;
-    color: rgb(209, 207, 207);
+    color: rgb(255, 255, 255);
 }
 
+form {
+    display: block;
+    text-align: left;
+}
 
+.col-4 {
+    padding: 0;
+}
+
+.Weather h2 {
+    display: block;
+    margin: 0 auto;
+    padding: 25px 0 10px 0;
+    text-align: left;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.Weather ul {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.Weather li{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    list-style-type: none;
+}
+
+.Weather img {
+    float: left;
+    padding-left: 30px;
+}
+
+.Weather .degrees {
+    font-size: 40px;
+    line-height: 64px;
+}
+
+.Weather .unit{
+    font-size: 16px;
+    position: relative;
+    top: -17px;
+}
 
 footer{
+    display: block;
+    margin: 0 auto;
     padding-top: 20px;
     font-size: 12px;
+    text-align: center;
     color: rgb(209, 207, 207);
   }
