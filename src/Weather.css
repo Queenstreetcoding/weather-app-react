@@ -1,32 +1,16 @@
-body {
-    background-color: #282c34;
+.Container {
+    display: block;
+    margin: 0 auto;
+    padding-top: 130px;
+    max-width: 600px;
 }
 
-.container {
-    padding-top: 130px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 600px;
+.Weather-forecast h1 {
+    text-align: center;
     color: rgba(49, 171, 201, 0.397);
-  }
-  
-  header {
-    padding: 15px;
-  }
-  
-  footer{
-    padding-top: 20px;
-    font-size: 12px;
-    color: rgb(209, 207, 207);
-  }
-  
-  a{
-    color: rgb(209, 207, 207);
-  }
+}
 
-.weather {
+.Weather {
     display: block;
     margin: 0 auto;
     padding: 35px;
@@ -38,47 +22,10 @@ body {
     color: rgb(209, 207, 207);
 }
 
-form {
-    display: block;
-    text-align: left;
-}
 
-.col-4 {
-    padding: 0;
-}
 
-.weather h1 {
-    display: block;
-    margin: 0 auto;
-    padding: 25px 0 0 0;
-    text-align: left;
-    font-size: 20px;
-}
-.weather ul {
-    margin: 0 auto;
-    padding: 0;
-}
-
-.weather li{
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    text-align: left;
-    list-style-type: none;
-}
-
-.weather img {
-    float: left;
-    padding-left: 30px;
-}
-
-.weather .degrees {
-    font-size: 40px;
-    line-height: 64px;
-}
-
-.weather .unit{
-    font-size: 16px;
-    position: relative;
-    top: -17px;
-}
+footer{
+    padding-top: 20px;
+    font-size: 12px;
+    color: rgb(209, 207, 207);
+  }
