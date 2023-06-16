@@ -14,8 +14,8 @@ export default function WeatherInfo (props){
         <div class="row mt-4">
             <div class="col-6">
                 <div class="clearfix">
-                <img src={props.data.icon} alt={props.data.description} class="float-left"/>
-                <div class="float-left">
+                <img src={props.data.icon} alt={props.data.description}/>
+                <div>
                 <span class="degrees">{Math.round(props.data.temperature)}</span>
                 <span class="unit">°C</span>
                 <span class="unit"> | </span>
@@ -33,8 +33,6 @@ export default function WeatherInfo (props){
         </div>
         </div>
         </div>
-        
-<footer>This app is coded by Cindy Verboog and is <a href="https://github.com/Queenstreetcoding/weather-app-react">open-sourced</a> on GitHub</footer>
 </div>
     )
 }
