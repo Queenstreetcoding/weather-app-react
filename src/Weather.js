@@ -17,7 +17,6 @@ export default function Weather(props){
             date: new Date(response.data.dt * 1000),
             description: response.data.weather[0].description,
             temperature: response.data.main.temp,
-            precipitation: response.data.main.precipitation,
             humidity: response.data.main.humidity,
             wind: response.data.wind.speed,
             icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
