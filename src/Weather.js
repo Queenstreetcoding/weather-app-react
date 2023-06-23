@@ -3,6 +3,7 @@ import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast.js";
 import axios from "axios";
 import "./Weather.css";
+import WeatherConditions from "./WeatherConditions.js";
 
 
 export default function Weather(props){
@@ -67,13 +68,15 @@ export default function Weather(props){
                     </div>  
                     <WeatherForecast coordinates={weatherData.coordinates}/>
                     </div>  
-                    </div>  
-        </div>  
+                    <div className="col-2 p-0">
+                    <WeatherConditions />
+                  </div> 
+                  </div> 
+                  </div>
         )
     } else {
         search();
     return(
         "Loading..."
     )
-}
-}
+    }}
