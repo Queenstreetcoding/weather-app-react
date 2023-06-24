@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import WeatherInfo from "./WeatherInfo";
-import WeatherForecast from "./WeatherForecast.js";
 import axios from "axios";
 import "./Weather.css";
+import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast.js";
 import WeatherConditions from "./WeatherConditions.js";
 
 
@@ -69,7 +69,7 @@ export default function Weather(props){
                     <WeatherForecast coordinates={weatherData.coordinates}/>
                     </div>  
                     <div className="col-2 p-0">
-                    <WeatherConditions />
+                    <WeatherConditions temperature={props.temperature} />
                   </div> 
                   </div> 
                   </div>
