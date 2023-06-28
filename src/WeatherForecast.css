@@ -29,9 +29,13 @@
     width: 60px;
 }
 
+.SunriseSunset {
+    padding-top: 60px;
+    text-align: left;
+}
 
 .time-sunrise, .time-sunset{
     margin: 0 10px;
-    padding-right: 17px;
+    padding-right: 15px;
     width: 20px;
 }

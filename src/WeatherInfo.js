@@ -16,7 +16,7 @@ export default function WeatherInfo (props){
               <li class="text-capitalize">{props.data.description}</li>
           </ul>
           </div>
-          <div className="col-6 pt-5 ps-0 pe-0">
+          <div className="col-6 ps-0 pe-0">
             <SunriseSunset sunrise={props.data.sunrise} sunset={props.data.sunset}/>        
           </div>
         <div class="row mt-4">
