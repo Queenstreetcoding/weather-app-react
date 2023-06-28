@@ -1,19 +1,26 @@
 import React from "react";
 import FormattedDate from "./FormattedDate.js";
 import WeatherTemperature from "./WeatherTemperature.js";
+import SunriseSunset from "./SunriseSunset.js";
+
 
 
 export default function WeatherInfo (props){
     return (
         <div className="WeatherInfo">
-
-            <h2>{props.data.city}, {props.data.country}</h2>
+        <div className="row">
+            <div className="col-6">
+            <h2>{props.data.city}</h2>
             <ul>
              <li><FormattedDate date={props.data.date}/></li>
               <li class="text-capitalize">{props.data.description}</li>
           </ul>
+          </div>
+          <div className="col-6 pt-5 ps-0 pe-0">
+            <SunriseSunset sunrise={props.data.sunrise} sunset={props.data.sunset}/>        
+          </div>
         <div class="row mt-4">
-            <div class="col-6">
+            <div class="col-7">
                 <div class="clearfix">
                 <img src={props.data.icon} alt={props.data.description}/>
                 <div className="digits">
@@ -21,15 +28,13 @@ export default function WeatherInfo (props){
             </div>
             </div>
             </div>
-            <div class="col-6">
-                <ul className="WeatherDetails ps-3 pt-3">
-                    <li>Precipitation: {props.data.precipitation}%</li>
+            <div class="col-4">
+                <ul className="WeatherDetails ps-3 pt-4">
                     <li>Humidity: {props.data.humidity}%</li>
                     <li>Wind: {props.data.wind} km/h</li>
                 </ul>
                 </div>
-        <div className="col-2">
-        </div>
+                </div>
         </div>
         </div>
     )

@@ -21,8 +21,8 @@ export default function Weather(props){
             humidity: response.data.main.humidity,
             wind: response.data.wind.speed,
             icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
-            sunrise: new Date(response.data.weather[0].sunrise * 1000),
-            sunset: new Date(response.data.weather[0].sunset * 1000)
+            sunrise: new Date(response.data.sys.sunrise / 1000),
+            sunset: new Date(response.data.sys.sunset / 1000)
         });
 
     }
@@ -69,7 +69,7 @@ export default function Weather(props){
                     <WeatherForecast coordinates={weatherData.coordinates}/>
                     </div>  
                     <div className="col-2 p-0">
-                    <WeatherConditions temperature={props.temperature} />
+                    <WeatherConditions temperature={weatherData.temperature} />
                   </div> 
                   </div> 
                   </div>
