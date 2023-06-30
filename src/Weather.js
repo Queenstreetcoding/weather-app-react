@@ -21,8 +21,8 @@ export default function Weather(props){
             humidity: response.data.main.humidity,
             wind: response.data.wind.speed,
             icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
-            sunrise: new Date(response.data.sys.sunrise),
-            sunset: new Date(response.data.sys.sunset)
+            sunrise: response.data.sys.sunrise,
+            sunset: response.data.sys.sunset
         });
 
     }
